@@ -1,0 +1,66 @@
+.calendar {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative; 
+}
+
+/* Styling for the header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 1.2em;
+  padding: 10px 0;
+  background-color: white;
+  position: static; 
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header.selected {
+  background-color: #eeeeee;
+}
+
+.header span {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  padding: 0 20px; 
+}
+
+.header span:hover {
+  background-color: #eeeeee;
+  color: #000;
+}
+
+/* Styling for the previous and next buttons */
+.header button {
+  background: white;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin: 0 10px;
+  color: #333;
+  padding: 0;
+}
+
+.header button:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+/* Media query for responsiveness */
+@media (min-width: 768px) {
+  .header {
+    position: static; 
+  }
+}

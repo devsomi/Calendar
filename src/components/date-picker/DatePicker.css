@@ -1,0 +1,48 @@
+.date-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  width: auto; /* Allow the container to adjust its width based on content */
+  max-width: 120px; /* Set a maximum width to contain year-month-date */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 10px; 
+}
+
+.calendar-icon {
+  cursor: pointer;
+  margin-bottom: 2px;
+  width: 24px; 
+  height: 24px; 
+  fill: currentColor; 
+}
+
+input {
+  flex: 1; /* Allow the input to take up the available space */
+  padding: 8px 0px 8px 10px;
+  border: none;
+  width: 100%; /* Make the input take up the remaining space */
+}
+
+input:focus {
+  outline: none;
+}
+
+.calendar-dropdown {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background: #fff;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}

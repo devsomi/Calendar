@@ -1,0 +1,24 @@
+.month-selector {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+  top: 80px; 
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+.month-option {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  border: none; 
+}
+
+.month-option.selected {
+  background: #db3d44;
+  color: #fff;
+  border-radius: 50%; 
+}

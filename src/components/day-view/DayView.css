@@ -1,0 +1,66 @@
+.weekdays {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-weight: bold;
+  background-color: white;
+  position: static; 
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.weekday {
+  text-align: center;
+  width: 14.28%;
+  padding: 8px 0;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 4px;
+
+  .day {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #000;
+    border: 1px solid transparent;
+    border-radius: 50%;
+  }
+
+  /* Styles for selected date */
+  .selected {
+    color: #db3d44;
+  }
+
+  /* Styling for today's date in red */
+  .today {
+    color: #db3d44;
+  }
+
+  .day.extra {
+    color: #eeeeee;
+  }
+
+  .day:hover {
+    background-color: #db3d44;
+    color: #fff;
+  }
+
+  /* Media query for responsiveness */
+  @media (min-width: 768px) {
+    .weekdays {
+      position: static; 
+    }
+
+    .days {
+      margin-top: 0; 
+    }
+  }
+}
