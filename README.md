@@ -1,16 +1,22 @@
 # Calendar
-Custom Calendar for Exercise
 
 ## Installation
 
-1. Clone the repository
+1. **Clone the Repository:** 
+    ```
     git clone https://github.com/devsomi/Calendar.git
-2. Install NPM packages
+    ```
+
+2. **Install NPM Packages:**
+    ```
     npm install
-3. Run the app
+    ```
+
+3. **Run the App:**
+    ```
     npm start
+    ```
 
-### Author
+## Author
 
-Angelica Bicaldo
-
+**Angelica Bicaldo**
